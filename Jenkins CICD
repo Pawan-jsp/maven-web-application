@@ -20,7 +20,7 @@ stage('UploadArtifactIntoNexusRepo'){
 stage('DeployAppIntoTomcatServer'){
     
     sshagent(['17db3365-fdd8-4c37-b8bc-966dc7c42c64']) {
-    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ubuntu@52.66.122.227:/opt/apache-tomcat-9.0.96/webapps"
+    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ubuntu@65.0.107.189:/opt/apache-tomcat-9.0.96/webapps"
   }
  }
 
